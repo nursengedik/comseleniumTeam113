@@ -33,31 +33,31 @@ public class C03_DriverManageMethodlari {
 
         driver.get("https://www.amazon.com");
 
-        System.out.println("Baslangicta konum : "+driver.manage().window().getPosition()); // (22, 60)
-        System.out.println("Baslangicta boyut : "+driver.manage().window().getSize());// (1200, 963)
+        System.out.println("Baslangicta konum : "+driver.manage().window().getPosition()); // (10, 10)
+        System.out.println("Baslangicta boyut : "+driver.manage().window().getSize());// (1050, 708)
 
         Thread.sleep(1000);
         driver.manage().window().maximize();
-        System.out.println("Maximize konum : "+driver.manage().window().getPosition()); //
-        System.out.println("Maximize boyut : "+driver.manage().window().getSize());//
+        System.out.println("Maximize konum : "+driver.manage().window().getPosition()); //-8,-8
+        System.out.println("Maximize boyut : "+driver.manage().window().getSize());//1382, 744
 
         Thread.sleep(1000);
         driver.manage().window().fullscreen();
-        System.out.println("Fullscreen konum : "+driver.manage().window().getPosition()); //
-        System.out.println("Fullscreen boyut : "+driver.manage().window().getSize());//
+        System.out.println("Fullscreen konum : "+driver.manage().window().getPosition()); //0,0
+        System.out.println("Fullscreen boyut : "+driver.manage().window().getSize());//1366, 768
 
         Thread.sleep(1000);
         driver.manage().window().minimize();
-        System.out.println("Minimize konum : "+driver.manage().window().getPosition()); //
-        System.out.println("Minimize boyut : "+driver.manage().window().getSize());//
+        System.out.println("Minimize konum : "+driver.manage().window().getPosition()); //10, 10
+        System.out.println("Minimize boyut : "+driver.manage().window().getSize());//1050, 708
 
         // pencereyi istedigimiz boyut ve konuma getirelim
         Thread.sleep(1000);
         driver.manage().window().setPosition(new Point(50,50));
         driver.manage().window().setSize(new Dimension(500,500));
 
-        System.out.println("istedigimiz konum : "+driver.manage().window().getPosition()); //
-        System.out.println("istedigimiz boyut : "+driver.manage().window().getSize());//
+        System.out.println("istedigimiz konum : "+driver.manage().window().getPosition()); //50, 50
+        System.out.println("istedigimiz boyut : "+driver.manage().window().getSize());//516, 500
 
 
         Thread.sleep(3000);
